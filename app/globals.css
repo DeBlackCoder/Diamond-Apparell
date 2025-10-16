@@ -574,6 +574,11 @@ nav a:hover {
 
 /* ======= Responsive: Mobile Menu ======= */
 @media (max-width: 768px) {
+
+    .header{
+    padding: 1rem 2rem;
+    margin-left: -2rem;
+    }
   .nav {
     position: fixed;
     top: 0;
