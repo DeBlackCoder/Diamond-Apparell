@@ -53,6 +53,13 @@ nav a:hover {
   color: #b58540;
 }
 
+.home {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -451,19 +458,28 @@ nav a:hover {
 
 /* ======= Base Header ======= */
 .header {
-  /* position: fixed; */
-  margin-left: -8rem;
+  position: fixed; /* optional — keeps it visible on scroll */
   top: 0;
-  width: 97%;
+  left: 0;
+  width: 100vw; /* full viewport width */
   background-color: #fffaf3;
   color: #333;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   border-bottom: 1px solid #e4dfd3;
   transition: all 0.3s ease;
   z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* ensures padding doesn’t exceed width */
+}
+
+/* Prevent horizontal scroll caused by 100vw on small screens */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* .header.scrolled {
@@ -577,7 +593,7 @@ nav a:hover {
 
     .header{
     padding: 1rem 2rem;
-    margin-left: -2rem;
+    
     }
   .nav {
     position: fixed;
