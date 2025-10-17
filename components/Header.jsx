@@ -32,6 +32,8 @@ const Header = () => {
       </nav>
 
       {/* Menu Button (Mobile) */}
+
+      
       <div
         className={`menu-btn ${menuOpen ? "open" : ""}`}
         onClick={toggleMenu}
@@ -39,6 +41,7 @@ const Header = () => {
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
+        
       </div>
 
       {/* Background Overlay */}
