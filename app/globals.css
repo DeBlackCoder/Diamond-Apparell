@@ -699,6 +699,14 @@ body, html {
   }
 }
 
+
+@media (max-width: 600px) {
+ .products-page{
+  padding: 30px 20px;
+
+ }
+}
+
 /* 📱 Small Screens (Mobile Phones) */
 @media (max-width: 767px) {
   body {
