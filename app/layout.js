@@ -13,6 +13,8 @@ export default function RootLayout({ children }) {
       <body>
        <Header />
         <main>{children}</main>
+
+        
         <footer className="footer">
           <p>© {new Date().getFullYear()} Diamond Apparell. All rights reserved.</p>
         </footer>

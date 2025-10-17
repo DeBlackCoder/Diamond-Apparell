@@ -763,3 +763,136 @@ body, html {
     align-items: center;
   }
 }
+
+/* CONTACT PAGE */
+
+/* Container for the whole page */
+/* Main container */
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh; /* full height */
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-top: 9rem;
+}
+
+
+/* Page title */
+.contact-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+/* Form styles */
+.contact-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-page input,
+.contact-page textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.contact-page button {
+  padding: 0.75rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-page button:hover {
+  background-color: #005bb5;
+}
+
+.contact-page button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.contact-page p.status-message,
+.contact-page p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Contact writeup */
+
+
+.contact-info {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-top: 2rem;
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #0070f3;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-links a svg {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover svg {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-body {
+    padding: 1rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+}
+
+
